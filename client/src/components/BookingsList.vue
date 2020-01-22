@@ -1,6 +1,5 @@
 <template>
-  <div>
-    <h1>Booking List</h1>
+  <div class="grid-container">
     <booking-list-item v-for="booking in bookings" :booking="booking" />
   </div>
 </template>
@@ -51,4 +50,10 @@ export default {
 </script>
 
 <style scoped>
+  .grid-container{
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
 </style>
